@@ -1,28 +1,15 @@
-import React from 'react';
+import Header from './components/Header';
 
 const App = () => {
-  const title = 'Blog Post';
-  const comments = [
-    { id: 1, text: 'comment 1' },
-    { id: 2, text: 'comment 2' },
-    { id: 3, text: 'comment 3' }
-  ];
-
-  const showComments = true;
-
   return (
-    <div>
-      <h1>{title}</h1>
-      <div className='comments'>
-        {showComments && (
-          <ul>
-            {comments.map((comment, index) => (
-              <li key={index}>{comment.text}</li>
-            ))}
-          </ul>
-        )}
+    <>
+      <Header />
+      <Header text='Practical App' />
+      <Header text={true} />
+      <div className='container'>
+        <h1>This is test message</h1>
       </div>
-    </div>
+    </>
   );
 };
 
