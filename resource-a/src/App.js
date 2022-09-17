@@ -4,10 +4,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <Header text='Practical App' />
-      <Header text={true} />
       <div className='container'>
-        <h1>This is test message</h1>
+        <h1>My App</h1>
       </div>
     </>
   );
