@@ -1,6 +1,8 @@
-import React from 'react';
+import { useFeedback } from '../context/FeedbackContext';
 
-const FeedbackStats = ({ feedback }) => {
+const FeedbackStats = () => {
+  const { feedback } = useFeedback();
+
   let average =
     feedback.reduce((acc, cur) => {
       return acc + cur.rating;
