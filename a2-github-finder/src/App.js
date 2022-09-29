@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Footer from './layout/Footer';
 import Navbar from './layout/Navbar';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
       <div className='flex flex-col justify-between h-screen'>
         <Navbar />
         <main>Content</main>
+        <Footer />
       </div>
     </Router>
   );
