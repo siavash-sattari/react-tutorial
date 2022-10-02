@@ -59,7 +59,7 @@ function User() {
               </figure>
               <div className='card-body justify-end'>
                 <h2 className='card-title mb-0'>{name}</h2>
-                <p>{login}</p>
+                <p className='flex-grow-0'>{login}</p>
               </div>
             </div>
           </div>
