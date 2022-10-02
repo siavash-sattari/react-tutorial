@@ -14,16 +14,16 @@ function RepoItem({ repo }) {
         </h3>
         <p className='mb-3 text-white'>{description}</p>
         <div>
-          <div className='mr-2 badge badge-info badge-lg'>
+          <div className='mr-2 mb-3 badge badge-info badge-lg'>
             <FaEye className='mr-2' /> {watchers_count}
           </div>
-          <div className='mr-2 badge badge-success badge-lg'>
+          <div className='mr-2 mb-3 badge badge-success badge-lg'>
             <FaStar className='mr-2' /> {stargazers_count}
           </div>
-          <div className='mr-2 badge badge-error badge-lg'>
+          <div className='mr-2 mb-3 badge badge-error badge-lg'>
             <FaInfo className='mr-2' /> {open_issues}
           </div>
-          <div className='mr-2 badge badge-warning badge-lg'>
+          <div className='mr-2 mb-3 badge badge-warning badge-lg'>
             <FaUtensils className='mr-2' /> {forks}
           </div>
         </div>
