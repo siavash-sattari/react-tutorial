@@ -1,7 +1,12 @@
-import React from 'react';
+import { Counter } from './components/Counter';
 
 const App = () => {
-  return <h1>Redux</h1>;
+  return (
+    <div className='App'>
+      <h1>Redux Sampme</h1>
+      <Counter />
+    </div>
+  );
 };
 
 export default App;
