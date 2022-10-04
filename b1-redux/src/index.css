@@ -9,3 +9,23 @@ body {
 .App {
   text-align: center;
 }
+
+.product-list {
+  list-style-type: none;
+}
+
+.product-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.product-list li img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.product-list li p {
+  margin: 0 2rem;
+}
