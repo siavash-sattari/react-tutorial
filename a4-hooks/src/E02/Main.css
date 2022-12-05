@@ -1,0 +1,11 @@
+button {
+  border: navajowhite;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+span {
+  font-weight: bold;
+  margin: 0 10px;
+}
