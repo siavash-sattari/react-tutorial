@@ -12,18 +12,16 @@ const Main = () => {
 
   const increase = () => {
     // setCount(count + 1);
-    setCount(prevState => prevState + 1);
+    setCount(prevCount => prevCount + 1);
   };
 
   const decrease = () => {
     // setCount(count - 1);
-    setCount(prevState => prevState - 1);
+    setCount(prevCount => prevCount + 1);
   };
 
   const removeUser = userId => {
     // setUsers(users.filter(user => user.id !== userId));
-    
-    // setUsers(prevState => prevState.filter(user => user.id !== userId));
 
     const newUsers = [...users];
     const mainUserIndex = newUsers.findIndex(user => user.id === userId);

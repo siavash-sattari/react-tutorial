@@ -16,9 +16,9 @@ const Main = () => {
     console.log('Component Updating'); // Updating
   }, [count]);
 
-  const increase = () => setCount(count + 1);
+  const increase = () => setCount(prevCount => prevCount + 1);
 
-  const decrease = () => setCount(count - 1);
+  const decrease = () => setCount(prevCount => prevCount - 1);
 
   return (
     <div>
