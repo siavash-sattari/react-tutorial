@@ -1,8 +1,9 @@
 import React from 'react';
+import Main from './E01/Main';
 import './App.css';
 
 function App() {
-  return <h1>A4 - Hooks</h1>;
+  return <Main />;
 }
 
 export default App;
