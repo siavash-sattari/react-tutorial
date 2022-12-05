@@ -1,0 +1,11 @@
+button {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  padding: 4px 10px;
+  outline: none;
+}
