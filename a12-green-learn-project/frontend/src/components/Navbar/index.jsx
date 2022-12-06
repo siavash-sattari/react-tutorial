@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className='container-fluid'>
         <div className='main-header__content'>
           <div className='main-header__right'>
-            <img src='images/logo/Logo.png' className='main-header__logo' alt='green-logo' />
+            <img src='/images/logo/Logo.png' className='main-header__logo' alt='green-logo' />
 
             <ul className='main-header__menu'>
               <li className='main-header__item'>

@@ -6,7 +6,7 @@ const CourseBox = () => {
     <div className='col-4'>
       <div className='course-box'>
         <a href='#'>
-          <img src='images/courses/fareelancer.png' alt='Course img' className='course-box__img' />
+          <img src='/images/courses/fareelancer.png' alt='Course img' className='course-box__img' />
         </a>
         <div className='course-box__main'>
           <a href='#' className='course-box__title'>
@@ -21,11 +21,11 @@ const CourseBox = () => {
               </a>
             </div>
             <div className='course-box__rating'>
-              <img src='images/svgs/star.svg' alt='rating' className='course-box__star' />
-              <img src='images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
-              <img src='images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
-              <img src='images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
-              <img src='images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
+              <img src='/images/svgs/star.svg' alt='rating' className='course-box__star' />
+              <img src='/images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
+              <img src='/images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
+              <img src='/images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
+              <img src='/images/svgs/star_fill.svg' alt='rating' className='course-box__star' />
             </div>
           </div>
 
