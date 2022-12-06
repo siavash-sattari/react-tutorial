@@ -1,0 +1,17 @@
+body {
+  padding: 40px;
+}
+
+section {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 0.25em;
+  border-radius: 0.5em;
+}
