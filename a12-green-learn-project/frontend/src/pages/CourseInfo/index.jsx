@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Breadcrumb from '../../components/Breadcrumb';
 import CourseDetailBox from '../../components/CourseDetailBox';
+import CommentsTextArea from '../../components/CommentsTextArea';
 import './CourseInfo.css';
 
 const CourseInfo = () => {
@@ -250,6 +251,8 @@ const CourseInfo = () => {
                       فعالیت داشته باشم.و..
                     </p>
                   </div>
+
+                  <CommentsTextArea />
                 </div>
               </div>
             </div>
