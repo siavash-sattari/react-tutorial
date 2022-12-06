@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import LastArticles from '../../components/LastArticles';
 import ListOfCourses from '../../components/ListOfCourses';
@@ -12,6 +13,7 @@ const Index = () => {
       <ListOfCourses />
       <Services />
       <LastArticles />
+      <Footer />
     </div>
   );
 };
