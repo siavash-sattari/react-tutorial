@@ -1,6 +1,7 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import Topbar from '../Topbar';
+import Navbar from '../Navbar';
+import Landing from '../Landing';
 import './Header.css';
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
     <header className='header'>
       <Topbar />
       <Navbar />
+      <Landing />
     </header>
   );
 };
