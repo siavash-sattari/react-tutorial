@@ -1,6 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { CourseIcon, StudentIcon, TimeIcon } from '../icons';
+import LandingCounter from '../LandingCounter';
 import './Landing.css';
 
 const Landing = () => {
@@ -34,19 +35,19 @@ const Landing = () => {
         <div className='landing-status'>
           <div className='landing-status__item'>
             <StudentIcon />
-            <span className='landing-status__count'>31,071</span>
+            <LandingCounter count={1071} />
             <span className='landing-status__text'>کاربر توی گرین لرن ثبت نام کردن</span>
           </div>
 
           <div className='landing-status__item'>
             <CourseIcon />
-            <span className='landing-status__count'>40</span>
+            <LandingCounter count={90} />
             <span className='landing-status__text'>دوره آموزشی داریم</span>
           </div>
 
           <div className='landing-status__item'>
             <TimeIcon />
-            <span className='landing-status__count'>31,320</span>
+            <LandingCounter count={2418} />
             <span className='landing-status__text'>دقیقه آموزش تولید کردیم</span>
           </div>
         </div>
