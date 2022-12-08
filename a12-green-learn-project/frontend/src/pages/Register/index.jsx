@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Topbar from '../../components/Topbar';
+import Input from '../../components/shared/Input';
+import Button from '../../components/shared/Button';
 import './Register.css';
 
 const Register = () => {
+  const registerNewUser = event => {
+    event.preventDefault();
+    console.log('User Register');
+  };
   return (
     <>
       <Topbar />
@@ -22,21 +28,21 @@ const Register = () => {
           </div>
           <form action='#' className='login-form'>
             <div className='login-form__username'>
-              <input className='login-form__username-input' type='text' placeholder='نام کاربری' />
+              <Input className='login-form__username-input' type='text' placeholder='نام کاربری' element='input' />
               <i className='login-form__username-icon fa fa-user'></i>
             </div>
             <div className='login-form__password'>
-              <input className='login-form__password-input' type='text' placeholder='آدرس ایمیل' />
+              <Input className='login-form__username-input' type='text' placeholder='آدرس ایمیل' element='input' />
               <i className='login-form__password-icon fa fa-envelope'></i>
             </div>
             <div className='login-form__password'>
-              <input className='login-form__password-input' type='text' placeholder='رمز عبور' />
+              <Input className='login-form__password-input' type='password' placeholder='رمز عبور' element='input' />
               <i className='login-form__password-icon fa fa-lock-open'></i>
             </div>
-            <button className='login-form__btn' type='submit'>
+            <Button className='login-form__btn' type='submit' onClick={registerNewUser} disabled={false}>
               <i className='login-form__btn-icon fa fa-user-plus'></i>
               <span className='login-form__btn-text'>عضویت</span>
-            </button>
+            </Button>
           </form>
           <div className='login__des'>
             <span className='login__des-title'>سلام کاربر محترم:</span>

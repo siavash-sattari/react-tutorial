@@ -3,9 +3,15 @@ import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Topbar from '../../components/Topbar';
+import Input from '../../components/shared/Input';
+import Button from '../../components/shared/Button';
 import './Login.css';
 
 const Login = () => {
+  const userLogin = event => {
+    event.preventDefault();
+    console.log('User Login');
+  };
   return (
     <>
       <Topbar />
@@ -22,17 +28,17 @@ const Login = () => {
           </div>
           <form action='#' className='login-form'>
             <div className='login-form__username'>
-              <input className='login-form__username-input' type='text' placeholder='نام کاربری یا آدرس ایمیل' />
+              <Input className='login-form__username-input' type='text' placeholder='نام کاربری یا آدرس ایمیل' element='input' />
               <i className='login-form__username-icon fa fa-user'></i>
             </div>
             <div className='login-form__password'>
-              <input className='login-form__password-input' type='text' placeholder='رمز عبور' />
+              <Input element='input' type='password' className='login-form__password-input' placeholder='رمز عبور' />
               <i className='login-form__password-icon fa fa-lock-open'></i>
             </div>
-            <button className='login-form__btn' type='submit'>
+            <Button className='login-form__btn' type='submit' onClick={userLogin} disabled={false}>
               <i className='login-form__btn-icon fas fa-sign-out-alt'></i>
               <span className='login-form__btn-text'>ورود</span>
-            </button>
+            </Button>
             <div className='login-form__password-setting'>
               <label className='login-form__password-remember'>
                 <input className='login-form__password-checkbox' type='checkbox' />
